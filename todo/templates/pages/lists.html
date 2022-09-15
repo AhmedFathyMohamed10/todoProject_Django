@@ -1,0 +1,34 @@
+<!--Simple todo page-->
+{% extends 'base.html' %}
+{% block content %}
+<h1>All Todos</h1>
+    
+    <br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="input-title">Title</label>
+        <input type="text" name="title" id="input-title" placeholder="Enter task">
+        <label for="input-completed-checkbox">Completed</label>
+        <input type="checkbox" name="completed" id="input-completed-checkbox">
+
+        <input class="btn-submit" type="submit" value="Add Task" name="Create Task">
+    </form>
+    <div class="todo-list">
+        {% for todo in todos %}
+            <div class="item-row">
+                <button class="btn-update"><a class="btn-update" href="{% url 'update_task' todo.id %}">Update</a></button>
+                <button class="btn-delete"><a class="btn-delete" href="{% url 'delete_task' todo.id %}">Delete</a></button>
+                
+
+                <div class="item-title">
+                    {% if todo.completed == True %}
+                    <strike>{{todo}}</strike>
+                    {% else %}
+                    <span>{{todo}}</span>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

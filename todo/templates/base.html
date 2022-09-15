@@ -1,0 +1,23 @@
+<!--Simple todo page-->
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Todo App {% block title %}{% endblock %}</h1>
+        </div>
+        
+        <div class="center-column">
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+    </div>
+</body>
+</html>

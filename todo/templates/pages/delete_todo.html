@@ -1,0 +1,31 @@
+
+<form method="POST" action="">
+	
+</form>
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    p{
+        font-size: 20px;
+
+    }
+    
+</style>
+<h1>Delete Todo</h1>
+<br>
+<p>Are you sure you want to delete <strong>"{{todo}}"</strong>?</p>
+
+
+
+<button type="submit" class="btn-cancel">
+    <a href="{% url 'lists' %}" >Cancel</a>
+</button>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm" value="Confirm">
+</form>
+{% endblock %}

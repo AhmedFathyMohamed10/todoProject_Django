@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(78, 56, 56) !important; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#input-title{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+div.header {
+    
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+
+    
+}
+.center-column{
+    width:700px;
+    background-image: url("https://st3.depositphotos.com/7865540/12759/i/450/depositphotos_127594220-stock-photo-business-overview-concept.jpg");
+    margin: 20px auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.item-row{
+    margin: 14px;
+    padding: 22px;
+    background-color: rgb(88, 88, 62);
+    border: 3px solid rgb(88, 88, 62);
+    border-radius: 6px;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+.item-row:hover{
+    background-color: #f8fefc;
+}
+
+
+.item-row button a{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.item-row button.btn-update{
+    float: left;
+    background-color: #0dea56;
+    border: 1px solid #ab9997;
+    border-radius: 10px;
+    padding: 9px 14px;
+    text-decoration: none;
+    margin: 5px 5px;
+    cursor: pointer;
+    
+}
+.item-row .btn-update:hover{
+    background-color: #97bfc5;
+    border-radius: 16px;
+    color: #fff;
+}
+.item-row button.btn-delete{
+    float: right;
+    background-color: #f00;
+    border: 1px solid #ab9997;
+    border-radius: 10px;
+    padding: 9px 14px;
+    text-decoration: none;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.item-row .btn-delete:hover{
+    background-color: #97bfc5;
+    border-radius: 16px;
+    color: #fff;
+}
+.item-row .item-title{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(72, 61, 61);
+    text-align: center;
+}
+
+
+#input-completed-checkbox{
+    text-align: justify;
+    margin: 12px 0 0 0;
+    padding: 0;
+
+}
+
+input[type=submit] {
+    background-color: #5c2bff;
+    border: none;
+    color: white;
+    padding: 16px 42px;
+    text-decoration: none;
+    margin: 4px 2px;
+    
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1dad1d;
+}
+
+.btn-cancel{
+    background-color: #21e15a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover{
+    background-color: #1d57ad;
+}
+
+.btn-cancel a{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}

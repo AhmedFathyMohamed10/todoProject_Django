@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Update Todo</h1>
+
+<form method="POST" action="">
+	{% csrf_token %}
+
+    <label for="input-title">Title</label>
+    <input type="text" name="title" id="input-title" placeholder="Enter task">
+    <label for="input-completed-checkbox">Completed</label>
+    <input type="checkbox" name="completed" id="input-completed-checkbox">
+
+    <input class="btn-submit" type="submit" value="Update Task" name="Create Task">	
+	
+</form>
+{% endblock %}
